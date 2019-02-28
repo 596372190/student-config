@@ -1,4 +1,4 @@
---- #分割线 8000 定义为prod  8005为dev
+--- 
 server:
   port: 8000
   servlet:
@@ -30,7 +30,8 @@ mybatis-plus:
   mapper-locations: classpath:/mybatis/mappers/*.xml  #添加mapper映射文件
   configuration:
     map-underscore-to-camel-case: true                #开启驼峰映射规则
----  #研发环境
+    
+---
 server:
   port: 8005
   servlet:
